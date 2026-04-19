@@ -1,9 +1,6 @@
 package com.paulograbin;
 
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.*;
 
 
 public class Initial extends javax.swing.JFrame {
@@ -13,12 +10,6 @@ public class Initial extends javax.swing.JFrame {
     }
 
     public static void main(String[] args) {
-        System.out.println("Starting with " + args.length + " arguments");
-
-        for (String arg : args) {
-            System.out.println("Arg " + arg);
-        }
-
         try {
             javax.swing.UIManager.LookAndFeelInfo[] installedLookAndFeels = javax.swing.UIManager.getInstalledLookAndFeels();
             for (javax.swing.UIManager.LookAndFeelInfo installedLookAndFeel : installedLookAndFeels) {
@@ -34,11 +25,7 @@ public class Initial extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Initial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
-        if (args.length > 0 && args[0].equalsIgnoreCase("client")) {
-            java.awt.EventQueue.invokeLater(() -> new ClienteCC().setVisible(true));
-        } else {
-            java.awt.EventQueue.invokeLater(() -> new ServidorCC().setVisible(true));
-        }
+        java.awt.EventQueue.invokeLater(() -> new ServidorCC().setVisible(true));
     }
 
     /**
