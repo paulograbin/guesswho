@@ -40,30 +40,6 @@
         </dependency>
 
         <dependency>
-            <groupId>anything</groupId>
-            <artifactId>anything</artifactId>
-            <version>anything</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/intellij_forms_rt.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>anything</groupId>
-            <artifactId>anything</artifactId>
-            <version>anything</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/TableLayout-src.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>anything</groupId>
-            <artifactId>anything</artifactId>
-            <version>anything</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/TableLayout.jar</systemPath>
-        </dependency>
-
-        <dependency>
             <groupId>com.intellij</groupId>
             <artifactId>forms_rt</artifactId>
             <version>7.0.3</version>
